@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<h2>Admin Dashboard</h2>
+<p>Welcome to the admin area, @User.Identity.Name!</p>
+
+<div>
+    <h3>Administrator Options</h3>
+    <ul>
+        <li><a href="/Admin/ManageUsers">Manage Users</a></li>
+        <li><a href="/Admin/ManageRoles">Manage Roles</a></li>
+        <li><a href="/Reports/Index">View Reports</a></li>
+    </ul>
+</div>
+
+<div>
+    <p>This area is restricted to administrators only. If you're seeing this page, you have the correct permissions.</p>
+</div>
